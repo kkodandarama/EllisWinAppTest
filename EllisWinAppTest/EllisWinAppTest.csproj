@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEC15EE2-F910-460B-BCBB-21849D336921}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EllisWinAppTest</RootNamespace>
+    <AssemblyName>EllisWinAppTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <TestProjectType>CodedUITest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ellis.WinApp.Testing.Framework">
+      <HintPath>References\Ellis.WinApp.Testing.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Elements\SelectRadioButton.cs" />
+    <Compile Include="Helpers\ExcelFileNames.cs" />
+    <Compile Include="Helpers\Extentions.cs" />
+    <Compile Include="Helpers\RightClick.cs" />
+    <Compile Include="Test Fixture\AccountReceivableTests\ARTests.cs" />
+    <Compile Include="Test Fixture\CustomerTests\CustomerProfileTest.cs" />
+    <Compile Include="Test Fixture\JobOrderTests\DispatchAndPayoutTests.cs" />
+    <Compile Include="Test Fixture\JobOrderTests\JobOrderTests.cs" />
+    <Compile Include="Test Fixture\Lockout Tests\MarginLockoutTests.cs" />
+    <Compile Include="Test Fixture\PayrollTests\PayrollTest.cs" />
+    <Compile Include="Test Fixture\WorkerTests\WorkerProfileTests.cs" />
+    <Compile Include="Windows\AccountsReceivableWindow\ARWindow.cs" />
+    <Compile Include="Windows\CustomerWindow\CreateCustomerWindow.cs" />
+    <Compile Include="Windows\CustomerWindow\CustomerProfileWindow.cs" />
+    <Compile Include="Windows\DispatchAndPayoutWindow\DispatchProfileWindow.cs" />
+    <Compile Include="Windows\DispatchAndPayoutWindow\OpenByStatus.cs" />
+    <Compile Include="Windows\DispatchAndPayoutWindow\PrintDispatch.cs" />
+    <Compile Include="Windows\EllisWindow\LandingPage.cs" />
+    <Compile Include="Windows\JobOrderWindow\BasicJobInformationWindow.cs" />
+    <Compile Include="Windows\JobOrderWindow\JobOrderFindQuoteWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\JobOrderWindow\JobOrderProfile\CancelJobOrder.cs" />
+    <Compile Include="Windows\JobOrderWindow\JobOrderProfile\CopyJobOrder.cs" />
+    <Compile Include="Windows\JobOrderWindow\JobOrderProfile\OpenJobOrder.cs" />
+    <Compile Include="Windows\JobOrderWindow\JobOrderWindow.cs" />
+    <Compile Include="Windows\JobOrderWindow\PreQualifyingQuestionsWindow.cs" />
+    <Compile Include="Windows\JobOrderWindow\ReportToAndBillingInfoWindow.cs" />
+    <Compile Include="Windows\JobOrderWindow\RequirementsWindow.cs" />
+    <Compile Include="Windows\JobOrderWindow\SafetyWindow.cs" />
+    <Compile Include="Windows\JobOrderWindow\ScheduleAndAdditionalChargesWindow.cs" />
+    <Compile Include="Windows\PayrollWindow\CreateNewOrderWindow.cs" />
+    <Compile Include="Windows\PayrollWindow\UnclaimedProperty.cs" />
+    <Compile Include="Windows\SearchWindow\ARAdvancedSearchWindow.cs" />
+    <Compile Include="Windows\SearchWindow\CustomerAdvanceSearchWindow.cs" />
+    <Compile Include="Helpers\Factory.cs" />
+    <Compile Include="Elements\CustomerSearchElements.cs" />
+    <Compile Include="Elements\WorkerSearchElements.cs" />
+    <Compile Include="Windows\EllisWindow\EllisHome.cs" />
+    <Compile Include="Windows\SearchWindow\NotificationAdvanceSearchWindow.cs" />
+    <Compile Include="Windows\SearchWindow\QOTAdvancedSearchWindow.cs" />
+    <Compile Include="Windows\SearchWindow\SearchWindow.cs" />
+    <Compile Include="Windows\SearchWindow\SimpleSearchWindow.cs" />
+    <Compile Include="Windows\SearchWindow\WorkerAdvancedSearchWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerConfirmApplicantElgibiltyWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerAddressWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerAlreadyExistWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerJobSkillsWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerReveiwApplicantBehavioralSurveyResultsWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerChangeStatusWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerGeoCodeWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerIdentityWindow.cs" />
+    <Compile Include="Test Fixture\CustomerTests\CreateCustomerTest.cs" />
+    <Compile Include="Test Fixture\EllisHomeTests\EllisWinTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test Data\TestData.cs" />
+    <Compile Include="Test Fixture\EllisHomeTests\LandingPageTests.cs" />
+    <Compile Include="Test Fixture\SearchTests\AdvanceSearchTests.cs" />
+    <Compile Include="Test Fixture\SearchTests\SimpleSearchTests.cs" />
+    <Compile Include="Test Fixture\WorkerTests\CreateWorkerTests.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerPhoneWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerGarnishmentsWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerProfileDetailsWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerRatingsandNotesWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerSkillsWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerSummaryWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerCompleteBehavioralSurveryWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerVerficationWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerVertexGeoCodeWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\CreateWorkerWindows\WorkerWithholdings.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerSurveyWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerWithHoldingsWindow.cs" />
+    <Compile Include="Windows\WorkerWindow\WorkerProfileWindows\WorkerWorkandPaymentHistoryWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Controls\Ellis.csv" />
+    <None Include="Test Data\TestData.xls" />
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' Or '$(VisualStudioVersion)' == '11.0') And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="UIAutomationTypes" />
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

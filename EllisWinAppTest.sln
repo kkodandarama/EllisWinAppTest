@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EllisWinAppTest", "EllisWinAppTest\EllisWinAppTest.csproj", "{DEC15EE2-F910-460B-BCBB-21849D336921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B890445D-5015-4E68-AA11-A027511DB15D}"
+	ProjectSection(SolutionItems) = preProject
+		EllisWinAppTest\References\Ellis.WinApp.Testing.Framework.dll = EllisWinAppTest\References\Ellis.WinApp.Testing.Framework.dll
+		Q401.testsettings = Q401.testsettings
+		Randy Laptop.testsettings = Randy Laptop.testsettings
+		RandyTest.testsettings = RandyTest.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{B5590B88-41EB-48FA-B9AC-208960D9A40D}"
+	ProjectSection(SolutionItems) = preProject
+		EllisWinAppTest\References\Ellis.WinApp.Testing.Framework.dll = EllisWinAppTest\References\Ellis.WinApp.Testing.Framework.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tb-tfsapp-p01:8080/tfs/trueblue
+		SccProjectUniqueName0 = EllisWinAppTest\\EllisWinAppTest.csproj
+		SccProjectName0 = EllisWinAppTest
+		SccAuxPath0 = http://tb-tfsapp-p01:8080/tfs/trueblue
+		SccLocalPath0 = EllisWinAppTest
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEC15EE2-F910-460B-BCBB-21849D336921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC15EE2-F910-460B-BCBB-21849D336921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC15EE2-F910-460B-BCBB-21849D336921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC15EE2-F910-460B-BCBB-21849D336921}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

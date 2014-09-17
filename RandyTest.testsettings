@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="RandysTestSettings" id="f81ac928-433d-420f-bdbe-129063b992c3" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>Trying to run against C1-C3</Description>
+  <Deployment>
+    <DeploymentItem filename="EllisWinAppTest\Test Data\TestData.xls" />
+  </Deployment>
+  <RemoteController name="tb-crptvsc-q401" />
+  <Execution location="Remote">
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="QA4 Client">
+      <SelectionCriteria>
+        <AgentProperty name="QA4 Client" value="Yes" />
+      </SelectionCriteria>
+    </AgentRule>
+  </Execution>
+  <Properties />
+</TestSettings>

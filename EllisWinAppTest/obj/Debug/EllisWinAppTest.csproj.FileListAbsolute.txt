@@ -1,0 +1,7 @@
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\bin\Debug\EllisWinAppTest.dll.config
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\bin\Debug\EllisWinAppTest.dll
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\bin\Debug\EllisWinAppTest.pdb
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\bin\Debug\Ellis.WinApp.Testing.Framework.dll
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\obj\Debug\EllisWinAppTest.csprojResolveAssemblyReference.cache
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\obj\Debug\EllisWinAppTest.dll
+C:\Users\jsikes\Source\Workspaces\QA\Automation\EllisWinAppTest\EllisWinAppTest\obj\Debug\EllisWinAppTest.pdb

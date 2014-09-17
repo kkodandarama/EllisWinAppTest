@@ -1,0 +1,3 @@
+﻿EllisWindow,WinWindow|ClassName|WindowsForms10.Window
+Toolbar,WinMenu|Name|Toolbar
+File,WinMenuItem|Name|File
